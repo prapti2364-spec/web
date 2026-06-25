@@ -1,0 +1,55 @@
+---
+---
+@import "{{ site.theme }}";
+
+// --- CUSTOM PRAN GRADIENT PALETTE ---
+
+body {
+  /* This codes the exact cream -> red -> black gradient from your image */
+  background: linear-gradient(to bottom, #f5eae6 0%, #e61c24 35%, #570005 60%, #121212 100%);
+  background-attachment: fixed; /* Keeps background smooth when scrolling */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #ffffff; /* Crisp white body text so it reads perfectly over red/black */
+}
+
+/* Make text containers look sleek and floating over your gradient background */
+.main-content {
+  background: rgba(18, 18, 18, 0.75); /* Dark transparent backing for easy reading */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+/* Header Adjustments */
+h1 {
+  font-size: 3.5rem !important;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #ffffff !important; /* Pure white title */
+  text-transform: uppercase;
+}
+
+h2, h3 {
+  color: #f5eae6 !important; /* Soft cream color for subheadings */
+}
+
+/* Sleek Menu Navigation Styling */
+a {
+  color: #f5eae6 !important; 
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #e61c24 !important; /* Accent flash of red when hovering */
+  border-bottom: 2px solid #e61c24;
+}
+
+/* Hides the default bulky Cayman top header banner completely so your gradient shines */
+.page-header {
+  display: none !important;
+}
