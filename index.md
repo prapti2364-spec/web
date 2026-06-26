@@ -4,6 +4,9 @@ title: PRAN
 ---
 
 <style>
+   /* 1. Imports the traditional stylized Indian calligraphy font style */
+  @import url('https://googleapis.com');
+  
   body {
     background: linear-gradient(to bottom, #f5eae6 0%, #e61c24 35%, #570005 60%, #121212 100%) !important;
     background-attachment: fixed !important;
@@ -20,28 +23,30 @@ title: PRAN
   .page-header {
     display: none !important;
   }
-  
-  /* Branding Text Styles */
+
+  /* 2. Custom Calligraphy Style for "PRAN" heading */
   .brand-hindi {
-    font-size: 4rem !important;
+    font-family: 'Rozha One', serif !important; /* Thick, elegant traditional script curves */
+    font-size: 4.5rem !important;
     font-weight: 800 !important;
-    color: #ffffff !important;
+    color: #ffffff !important; /* Crisp white font color */
     margin: 0 !important;
     line-height: 1.1 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle depth shadow like the image */
   }
   .brand-english {
+    font-family: 'Federo', sans-serif !important; /* Matches the artistic flare of the Hindi header */
     font-size: 2rem !important;
-    font-weight: 400 !important;
-    letter-spacing: 4px !important;
-    color: #f5eae6 !important;
+    letter-spacing: 5px !important;
+    color: #ffffff !important; /* Crisp white font color */
     text-transform: uppercase !important;
-    margin-top: 5px !important;
+    margin-top: 8px !important;
     margin-bottom: 5px !important;
   }
   .brand-meaning {
     font-size: 1rem !important;
     font-style: italic !important;
-    color: #b3b3b3 !important;
+    color: #ccbeba !important; /* Soft, readable contrast text */
     margin-top: 0 !important;
     margin-bottom: 25px !important;
     letter-spacing: 0.5px !important;
